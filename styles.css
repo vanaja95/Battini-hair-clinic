@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+    --dark-blue:#182f43;
+    --black:#0c0c0c;
+    --light-color:#191616;
+    --blue:#0e9bed;
+    --text-white:#f4f4f4;
+    --box-shadow:0 .5rem 1.5rem rgba(99, 93, 93, 0.1);
+ }
+
+
+
+*{
+    font-family:'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline:none; border:none;
+    text-decoration: none;
+    /* text-transform: capitalize; */
+    transform: all .2s linear;
+}
+
+*::selection{
+   background: var(--text-white);
+    color:var(--black);
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6.5rem;
+    scroll-behavior: smooth;
+}
+.main-header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width:100%;
+    height:100%;
+    padding: 1rem;
+    background:var(--dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    box-shadow: var(--box-shadow);
+  
+}
+
+
+#menu-bar {
+    font-size: 2.5rem;
+    border-radius: .5rem;
+    padding: .8rem 1.5rem;
+    color:var(--black);
+    cursor: pointer;
+    display: none; /* Hidden by default (will show on mobile screens) */
+   
+   
+    border: none; /* Removed incorrect border property */
+}
+#menu-bar.fa-times {
+    color:var(--black);
+}
+.navbar {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.navbar a {
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color:var(--text-white);
+    text-decoration: none;
+}
+
+/* Hover Effect for Navbar Links */
+.navbar a:hover {
+    background: var(--green);
+    color: #fff;
+}
+.home-container img{
+    position:relative;
+    object-fit:cover;
+    width:100%;
+    height:100vh;
+    pointer-events:none;
+}
